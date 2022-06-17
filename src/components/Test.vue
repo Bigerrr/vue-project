@@ -1,16 +1,15 @@
 <script>
-
+import SendEmail from './email/SendEmail.vue'
 export default {
   data() {
     return {
-      newTodo: '',
-    }
+      newTodo: "",
+    };
   },
-  computed: {
-
-  },
-  methods: {
-
+  computed: {},
+  methods: {},
+  components: {
+    SendEmail
   }
 }
 </script>
@@ -20,8 +19,12 @@ export default {
     <el-container>
       <el-aside width="200px">Aside</el-aside>
       <el-container>
-        <el-header><h3>OA系统的首页面</h3></el-header>
-        <el-main>Main</el-main>
+        <el-header>
+          <h3>OA系统的首页面</h3>
+        </el-header>
+        <el-main>
+          <SendEmail/>
+        </el-main>
         <el-footer>Footer</el-footer>
       </el-container>
     </el-container>
@@ -29,20 +32,23 @@ export default {
 </template>
 
 <style>
-  .el-header{
-		line-height: 60px;
-		background-color: palegreen;
-	}
-	.el-aside{
-		background-color: lightblue;
-		line-height: 170px;
-		outline-width: 5ch;
-	}
-	.el-main{
-		background-color: white;
-	}
-	.el-footer{
-		line-height: 100px;
-		background-color: salmon;
-	}
+.el-header {
+  line-height: 60px;
+  background-color: palegreen;
+}
+
+.el-aside {
+  background-color: lightblue;
+  line-height: 170px;
+  outline-width: 5ch;
+}
+
+.el-main {
+  background-color: white;
+}
+
+.el-footer {
+  line-height: 100px;
+  background-color: salmon;
+}
 </style>

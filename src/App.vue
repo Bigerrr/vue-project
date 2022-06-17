@@ -9,13 +9,13 @@ import Test from './components/Test.vue';
 </template>
 
 <style>
-@import '@/assets/base.css';
+/* @import '@/assets/base.css'; */
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  /* padding: 2rem; */
+  /* text-align: center; */
   font-weight: normal;
 }
 
