@@ -1,5 +1,5 @@
 <script>
-import SendEmail from './email/SendEmail.vue'
+import Inbox from './email/Inbox.vue';
 export default {
   data() {
     return {
@@ -9,8 +9,8 @@ export default {
   computed: {},
   methods: {},
   components: {
-    SendEmail
-  }
+    Inbox
+}
 }
 </script>
 
@@ -23,7 +23,7 @@ export default {
           <h3>OA系统的首页面</h3>
         </el-header>
         <el-main>
-          <SendEmail/>
+          <Inbox/>
         </el-main>
         <el-footer>Footer</el-footer>
       </el-container>

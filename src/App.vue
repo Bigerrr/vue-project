@@ -16,7 +16,7 @@ import Test from './components/Test.vue';
   margin: 0 auto;
   /* padding: 2rem; */
   /* text-align: center; */
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 
 </style>
