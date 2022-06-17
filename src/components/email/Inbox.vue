@@ -51,7 +51,7 @@ function deleteMail(index) {
 }
 
 function getMails() {
-    proxy.$axios.get("http://127.0.0.1:4523/m1/1117500-0-default/email/1", {
+    proxy.$axios.get("https://mock.apifox.cn/m1/1117500-0-default/email/1", {
     }).then(function(res){
         mailsList.value = res.data.mailsList
         doPagination(1)
